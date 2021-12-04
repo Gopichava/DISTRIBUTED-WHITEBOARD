@@ -1,0 +1,12 @@
+{
+  "name": "distributed-whiteboard",
+  "version": "0.0.1",
+  "description": "distributed-whiteboard",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.14.1",
+    "socket.io": "^1.7.2"
+  }
+}
