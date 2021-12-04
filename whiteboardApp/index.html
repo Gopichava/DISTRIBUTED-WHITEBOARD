@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Whiteboard</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+	  <link rel="stylesheet" type="text/css" href="index.css">
+    <span style="color: brown; padding: 10px; background-color: white; font-size:x-large;">Student: <b id="studentsname"></b></span>
+  </head>
+  <body>
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content" style="background-color: lightskyblue;">
+
+      <div class="modal-header">
+        <center><h1 style="color: white;">Welcome to Distributed Whiteboard</h1></center>
+      </div>
+	      <div class="modal-body" >
+          <div class="row text-center">
+            <div class="col-12 p-3">
+              <h3 class="modal-title" style="color: white;">Student's Name:</h3>
+              <input type="text" class="form-control" style="margin-bottom: 15px;" id="name" value="" placeholder="Full Name">
+              <input type="button" id="getName" style="background-color: white; color:lightskyblue" value="Submit" data-dismiss="modal" class="btn btn-outline-success">
+            </div>
+          </div>
+	      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="container">
+  <div class="row text-center">
+    <div class="col-12 m-5">
+      <div id="whiteboard">
+        <canvas id="myCanvas" class="shadow-lg p-3 mb-5 bg-white rounded" width="600px" height="600px">
+          ERROR!!!
+        </canvas>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<script src="index.js"></script>
+  </body>
+</html>

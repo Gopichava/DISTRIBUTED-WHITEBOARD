@@ -1,0 +1,12 @@
+
+body{
+    background-color: lightskyblue;
+}
+#whiteboard {
+        background-color: white;
+        margin: 0 auto;
+        width: 600px;
+        margin-top: 20px;
+        border: 15px solid rgb(159, 159, 221);
+        box-shadow: 7px 7px 7px 7px rgba(159, 159, 221, 0.521);
+}
